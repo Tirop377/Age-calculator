@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 94%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    height: 500px;
+    width: 550px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 90px 20px;
+    padding: 0 15px;
+}
+
+.inputContainer{
+    height: 35%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid hsl(0, 1%, 44%);
+}
+
+.evenbox{
+    width: 30%;
+}
+
+.label{
+    font-size: small;
+    font-weight: bold;
+    color: hsl(0, 1%, 44%);
+}
+
+.inputBox{
+    width: 95%;
+    height: 45px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 1px solid hsl(0, 1%, 44%);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.error{
+    font-size: 10px;
+    color: hsl(0, 100%, 67%);
+    display: none;
+    font-style: italic;
+}
+
+.icon-arrow{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    position: absolute;
+    right: -50px;
+    bottom: -35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 375px){
+    .container{
+        height: 500px;
+        width: 350px;   
+    }
+    .icon-arrow{
+        width: 60px;
+        height: 60px;
+        right: 39%;
+        bottom: -30px;
+    }
+    .inputBox{
+        width: 100%;
+    }
+
+    .inputContainer{
+        width: 100%;
+    }
+    .outputContainer{
+        margin-top: 20px;
+    }
+}
+
+.icon-arrow img{
+    width: 30px;
+}
+
+.outputContainer{
+    height: 65%;
+    width: 100%;
+    font-size: 52px;
+    font-weight: 900; 
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.months, .years, .days{
+    color:hsl(259, 100%, 65%);
+}
