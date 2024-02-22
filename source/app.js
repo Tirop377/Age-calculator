@@ -3,13 +3,6 @@ let date = new Date();
 let errorInInput = false;
 let missionCompleted = false;
 
-console.log(date.getDate());
-console.log(date.getMonth() +1);
-console.log(date.getFullYear());
-
-//calculateAge(10, 3, 2001)
-
-
 button.addEventListener('click', ()=>{
     getInput();
     button.style.backgroundColor = "hsl(259, 100%, 65%)"
@@ -42,8 +35,7 @@ function getInput(){
             document.querySelector(".yearError").style.display = "inline-block"
             document.querySelector(".yearInput").style.borderColor ="hsl(0, 100%, 67%)"
             document.querySelector(".yearInput").placeholder = "YY"
-            document.querySelector(".labelYear").style.color = "hsl(0, 100%, 67%)"
-            
+            document.querySelector(".labelYear").style.color = "hsl(0, 100%, 67%)"   
         }
         reset();
     
