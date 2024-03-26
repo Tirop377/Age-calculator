@@ -1,5 +1,5 @@
 const button = document.querySelector(".button");
-let date = new Date();
+const date = new Date();
 let errorInInput = false;
 let missionCompleted = false;
 
@@ -116,7 +116,6 @@ function verifyDate(day, month, year) {
                 errorInInput = true;
                 document.querySelector(".dayError").style.display = "inline-block"
                 document.querySelector(".dayInput").style.borderColor = "hsl(0, 100%, 67%)"
-                //document.querySelector(".dayInput").placeholder = "DD"
                 document.querySelector(".labelDay").style.color = "hsl(0, 100%, 67%)"
                 document.querySelector(".dayError").innerText = `Must be a valid day`; 
                 reset();
@@ -125,7 +124,6 @@ function verifyDate(day, month, year) {
             errorInInput = true;
             document.querySelector(".monthError").style.display = "inline-block"
             document.querySelector(".monthInput").style.borderColor ="hsl(0, 100%, 67%)"
-            //document.querySelector(".monthInput").placeholder = "MM"
             document.querySelector(".labelMonth").style.color = "hsl(0, 100%, 67%)"
             document.querySelector(".monthError").innerText = `Must be a valid month`;
             reset();
@@ -134,7 +132,6 @@ function verifyDate(day, month, year) {
         errorInInput = true;
         document.querySelector(".yearError").style.display = "inline-block"
         document.querySelector(".yearInput").style.borderColor ="hsl(0, 100%, 67%)"
-        //document.querySelector(".yearInput").placeholder = "YY"
         document.querySelector(".labelYear").style.color = "hsl(0, 100%, 67%)"
         document.querySelector(".yearError").innerText = `Must be in the past`;
         reset();
